@@ -1,4 +1,6 @@
+'use strict'
+
 module.exports = {
-    username: 'YOUR_USERNAME',
+    username: 'YOUR_EMAIL',
     password: 'YOUR_PASSWORD',
 }
