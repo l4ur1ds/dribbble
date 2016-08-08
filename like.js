@@ -5,11 +5,11 @@ const Nightmare = require('nightmare'),
       config    = require('./config')
 
 /**
- * Like Interval (2 seconds)
+ * Like Interval
  */
 function like() {
 
-    Nightmare({ show: true })
+    Nightmare({ show: false })
         .goto('https://dribbble.com/session/new')
         .type('#login', `${config.username}`)
         .type('#password', `${config.password}`)
@@ -28,14 +28,14 @@ function like() {
         .end()
         .then(function (result) {
             console.log(result)
-            console.log('Waiting 2 seconds...')
+            console.log('Waiting N seconds...')
         })
         .catch(function (error) {
             console.error('Skipping...')
-            console.log('Waiting 2 seconds...')
+            console.log('Waiting N seconds...')
         })
 
-        setTimeout(like, 20000)
+        setTimeout(like, 144000)
 
 }
 
