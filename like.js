@@ -28,11 +28,11 @@ function like() {
         .end()
         .then(function (result) {
             console.log(result)
-            console.log('Waiting N seconds...')
+            console.log('Waiting 144000 milliseconds...')
         })
         .catch(function (error) {
             console.error('Skipping...')
-            console.log('Waiting N seconds...')
+            console.log('Waiting 144000 milliseconds...')
         })
 
         setTimeout(like, 144000)
