@@ -2,7 +2,6 @@
  * Module Dependencies
  */
 const Nightmare = require('nightmare'),
-      nightmare = Nightmare({ show: true }),
       config    = require('./config')
 
 /**
@@ -10,7 +9,7 @@ const Nightmare = require('nightmare'),
  */
 function like() {
 
-    nightmare
+    Nightmare({ show: true })
         .goto('https://dribbble.com/session/new')
         .type('#login', `${config.username}`)
         .type('#password', `${config.password}`)
