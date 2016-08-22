@@ -2,7 +2,7 @@
  * Module Dependencies
  */
 const Nightmare = require('nightmare'),
-      nightmare = Nightmare({ show: true }),
+      nightmare = Nightmare({ show: false }),
       config    = require('./config')
 
 /**
