@@ -4,5 +4,6 @@
     "script"          : "like.js",
     "watch"           : "../",
     "log_date_format" : "YYYY-MM-DD HH:mm Z",
+    "instances"       : 2
   }]
 }
